@@ -1,0 +1,97 @@
+.primary-text{
+  
+  color: $Textwhite;
+  backface-visibility: none;
+  margin-bottom: 5rem;
+
+  
+
+ 
+  &-main{
+    display: block;
+    font-size: 4rem;
+    letter-spacing: 3rem;
+    font-weight: 400;
+    animation: MoveInLeft 3s;
+
+   
+    @include respond(tab-port){
+      letter-spacing: 1rem;
+      font-size: 4rem;
+    }
+    @include respond(phone){
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
+  }
+  &-sub{
+    text-transform: uppercase;
+    display: block;
+    font-size: 2.5rem;
+    letter-spacing: 2rem;
+    font-weight: 700;
+    animation: MoveInRight 3s;
+
+    @include respond(tab-port){
+      letter-spacing: 1rem;
+      font-size: 3rem;
+    }
+    
+    @include respond(phone){
+      letter-spacing: 1rem;
+      font-size: 4rem;
+    }
+  }
+  
+}
+.secondary-text{
+  display: inline-block;
+  font-size: 4rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right,$Lightgreen,$Mediumgreen);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .2s;
+
+ 
+
+  @include respond(tab-port){   
+    font-size: 2.5rem;
+  }
+  @include respond(phone){
+    font-size: 4rem;
+   
+  }
+
+  &:hover{
+    transform: skewX(2deg) skewY(5deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem $DarkGrey;
+  }
+}
+.heading-tertiary{
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $DarkGrey;
+
+  
+}
+p{
+  font-size: 1.6rem; 
+  font-weight: 400;
+  color: $DarkGrey;
+
+  @include respond(phone){
+    font-size: 2.5rem; 
+   
+  }
+  &:not(:last-child){
+    margin-bottom: 3rem;
+
+    @include respond(phone){
+      margin-bottom: .5rem;
+      font-size: 1.3rem; 
+     
+    }
+  }
+}

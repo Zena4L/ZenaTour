@@ -1,0 +1,25 @@
+.feature-box{
+  background-color: rgba($Textwhite,.8);
+  padding: 2.5rem;
+  font-size: 1.5rem;
+  box-shadow: 0 1.5rem 4rem rbga($black,.4);
+  transition: transform .3s;
+
+  @include respond(phone){
+    padding: 1.5rem;
+  
+  }
+
+  
+
+  &__icon{
+    font-size: 6rem;
+    background-image: linear-gradient(to right,$Lightgreen,$Mediumgreen);
+    -webkit-background-clip: text;
+    color: transparent;
+
+  }
+  &:hover{
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}

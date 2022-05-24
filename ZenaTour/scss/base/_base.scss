@@ -1,0 +1,39 @@
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  font-size: 62.5%; //1rem = 10px
+
+  @include respond(tab-land){//1rem =9px
+    font-size: 56.25%;
+  }
+  
+  @include respond(tab-port){ //1rem =8px
+    font-size: 50%;  
+  }
+ 
+  @include respond(desktop){//1rem = 12px
+    font-size: 75%;
+  }
+}
+body{
+  font-family: 'Lato',Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  line-height: 1.7;
+  font-weight: 400;
+  color: $DarkGrey;
+}
+.container{
+  max-width: 95%;
+  margin: 0 auto;
+
+  
+}
+img{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+}

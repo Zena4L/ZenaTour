@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEG,AAAD,kBAAM,CAAA;EACJ,SAAS,EAAE,IAAI;CAEhB",
+    "sources": [
+        "../../scss/components/feature-box.scss"
+    ],
+    "names": [],
+    "file": "feature-box.css"
+}
